@@ -19,6 +19,9 @@ config.bind('<Ctrl-J>', 'prompt-item-focus next', mode='prompt')
 config.bind('<Ctrl-K>', 'prompt-item-focus prev', mode='prompt')
 config.bind('<Ctrl-Escape>', 'jseval -q document.activeElement && document.activeElement.blur()')
 config.bind('gI', 'hint inputs')
+config.bind('gJ', 'tab-move +')
+config.bind('gK', 'tab-move -')
+config.bind('gm', 'tab-move')
 c.editor.command = ['ghostty', '-e', 'nvim', '{file}']
 c.scrolling.bar = 'when-searching'
 c.scrolling.smooth = True

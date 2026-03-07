@@ -1,5 +1,5 @@
 import catppuccin
-config.load_autoconfig(False)
+config.load_autoconfig(True)
 catppuccin.setup(c, 'mocha', True)
 config.set('content.cookies.accept', 'all', 'chrome-devtools://*')
 config.set('content.cookies.accept', 'all', 'devtools://*')

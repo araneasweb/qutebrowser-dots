@@ -31,7 +31,9 @@ c.tabs.show_switching_delay = 500
 c.tabs.title.elide = 'none'
 c.tabs.undo_stack_size = -1
 c.zoom.default = '80%'
-c.colors.webpage.darkmode.enabled = True
+c.colors.webpage.preferred_color_scheme = "dark"
+c.colors.webpage.darkmode.enabled = False
+config.bind(",d", "config-cycle colors.webpage.darkmode.enabled true false ;; reload")
 c.colors.webpage.darkmode.algorithm = 'lightness-cielab'
 c.tabs.last_close= "startpage"
 c.aliases['q'] = 'tab-close'

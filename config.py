@@ -22,10 +22,11 @@ config.bind('gI', 'hint inputs')
 config.bind('gJ', 'tab-move +')
 config.bind('gK', 'tab-move -')
 config.bind('gm', 'tab-move')
+config.bind(",w", "open http://web.archive.org/{url}")
 c.editor.command = ['ghostty', '-e', 'nvim', '{file}']
 c.scrolling.bar = 'when-searching'
 c.scrolling.smooth = True
-# c.spellcheck.languages = ["en-GB"]
+c.spellcheck.languages = ["en-GB"]
 c.statusbar.show = 'in-mode'
 c.statusbar.position = 'bottom'
 c.tabs.position = 'left'
@@ -45,4 +46,3 @@ c.aliases['qa'] = 'quit'
 c.aliases['w'] = 'session-save'
 c.aliases['wq'] = 'quit --save'
 c.aliases['wqa'] = 'quit --save'
-

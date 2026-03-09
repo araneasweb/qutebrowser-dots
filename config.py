@@ -23,6 +23,7 @@ config.bind('gJ', 'tab-move +')
 config.bind('gK', 'tab-move -')
 config.bind('gm', 'tab-move')
 config.bind(",w", "open http://web.archive.org/{url}")
+config.bind(",h", "spawn -u -v -o rebuild-freq-quickmarks")
 c.editor.command = ['ghostty', '-e', 'nvim', '{file}']
 c.scrolling.bar = 'when-searching'
 c.scrolling.smooth = True
